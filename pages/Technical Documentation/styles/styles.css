@@ -40,7 +40,7 @@ h1 {
 #home-link-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
   border-left: 1px solid black;
 }

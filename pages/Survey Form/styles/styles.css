@@ -114,15 +114,10 @@ textarea {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
   width: 100%;
-  background-color: darkslategray;
-  border-top: 1px solid gray;
-  color: beige;
+  height: 50px;
+  background-color: transparent;
+  color: white;
 }
 
 @media (max-width: 550px) {
