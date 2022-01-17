@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  color: black;
+}
+
+#home-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+#home-link:link,
+#home-link:visited {
+  text-decoration: none;
+  color: navy;
+}
+
+#home-link:hover {
+  text-decoration: underline;
+  background-color: gray;
+}
+
+.fa-home {
+  font-size: 24px;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img1 {
+  background-image: url(../img/img1.jpg);
+  min-height: 100%;
+  max-width: 100vw;
+}
+
+.img2 {
+  background-image: url(../img/img2.jpg);
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url(../img/img3.jpg);
+  min-height: 400px;
+}
+
+section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: beige;
+}
+
+.section-dark {
+  background-color: black;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.text .border {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.text .border.trans {
+  background-color: transparent;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-top: gray;
+  background-color: beige;
+}
+
+@media (max-width: 600px) {
+  .img1,
+  .img2,
+  .img3 {
+    background-attachment: scroll;
+  }
+
+  #home-link:hover {
+    background-color: beige;
+  }
+}

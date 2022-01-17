@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  color: black;
+  text-align: center;
+  background-image: url("../img/background-img.jpg");
+  background-color: #cccccc;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*Header Section*/
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid gray;
+}
+
+#logo-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 260px;
+}
+
+#home-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
+  min-width: 80px;
+  margin-left: 20px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+#home-link:link,
+#home-link:visited {
+  text-decoration: none;
+  color: darkblue;
+}
+
+#home-link:hover {
+  text-decoration: underline;
+  background-color: lightskyblue;
+  border-radius: 50%;
+}
+
+.fa-home {
+  font-size: 24px;
+}
+
+#logo {
+  margin-left: 20px;
+  width: 50%;
+  height: 90px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  width: 40%;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: calc(100% / 3);
+  padding: 0;
+  font-size: 16px;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  background-color: lightskyblue;
+}
+
+#nav-link-top {
+  border-top: none;
+}
+
+/*Page Content*/
+
+#filler {
+  height: 100px;
+  width: 100%;
+}
+
+#page-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  background-color: beige;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+}
+
+/*Form*/
+
+#form-section {
+  margin: 40px auto 0px auto;
+}
+
+#email {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+#email:focus {
+  outline: none;
+}
+
+#submit {
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: lightskyblue;
+}
+
+/*Features*/
+
+#features {
+  height: 100%;
+  width: 75%;
+  padding-top: 115px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#features h1 {
+  text-align: center;
+}
+
+#features-list li {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+#features-list p {
+  margin-bottom: 15px;
+}
+
+/*How It Works*/
+
+#how-it-works {
+  padding-top: 115px;
+}
+
+#how-it-works h1 {
+  margin-bottom: 10px;
+}
+
+#how-it-works figcaption {
+  font-size: 16px;
+}
+
+#video {
+  width: 382.4px;
+  height: 215.2px;
+}
+
+/*Pricing*/
+#pricing {
+  padding-top: 115px;
+}
+
+#pricing-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 35%;
+  background-color: lightskyblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.pricing-div {
+  width: 250px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.list-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65%;
+  margin: 0 auto;
+  padding: 10px 10px 10px 40px;
+  text-align: left;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+/* Media Queries */
+
+@media (max-width: 650px) {
+  #page-wrapper {
+    width: 90%;
+  }
+
+  #logo {
+    margin-left: 10px;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    border-left: 1px solid gray;
+  }
+
+  .nav-link {
+    height: calc(100% / 3);
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+
+  .nav-link:hover,
+  #home-link:hover {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  #video {
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  #email {
+    width: 95%;
+  }
+
+  #pricing-flex {
+    width: 95%;
+  }
+
+  .pricing-div {
+    width: 100%;
+  }
+}

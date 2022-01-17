@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/background.jpg");
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+label,
+p {
+  display: block;
+  font-size: 1em;
+}
+
+/*Page Content*/
+
+/*Home link*/
+
+#home-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: beige;
+  border-radius: 50%;
+}
+
+#home-link:link,
+#home-link:visited {
+  text-decoration: none;
+  color: navy;
+}
+
+#home-link:hover {
+  text-decoration: underline;
+  background-color: gray;
+}
+
+.fa-home {
+  font-size: 24px;
+}
+
+/*Header*/
+
+#header {
+  width: 550px;
+  margin: 40px auto 0 auto;
+  padding: 20px 0px 20px 0px;
+  border-radius: 5px;
+  color: beige;
+  border: 1px solid gray;
+  background-color: darkslategray;
+}
+
+#survey-form {
+  width: 550px;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  color: beige;
+  border: 1px solid gray;
+  background-color: darkslategray;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#information input,
+#information select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#radio label {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#submit {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: darkslategray;
+  border-top: 1px solid gray;
+  color: beige;
+}
+
+@media (max-width: 550px) {
+  #header {
+    width: 90%;
+  }
+
+  #survey-form {
+    width: 90%;
+  }
+}
