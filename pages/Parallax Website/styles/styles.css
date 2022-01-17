@@ -108,17 +108,6 @@ section {
   background-color: transparent;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  border-top: gray;
-  background-color: beige;
-}
-
 @media (max-width: 600px) {
   .img1,
   .img2,
