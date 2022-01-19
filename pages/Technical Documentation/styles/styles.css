@@ -193,10 +193,4 @@ footer {
     overflow: scroll;
     border-top: 1px solid black;
   }
-
-  footer {
-    justify-content: flex-start;
-    padding-top: 15px;
-    height: 200px;
-  }
 }
