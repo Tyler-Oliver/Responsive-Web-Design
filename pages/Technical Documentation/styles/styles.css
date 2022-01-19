@@ -152,17 +152,6 @@ code {
   background-color: #f7f7f7;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  margin-top: 20px;
-  border-top: 1px solid black;
-}
-
 /*Media Queries*/
 
 @media (max-width: 700px) {
