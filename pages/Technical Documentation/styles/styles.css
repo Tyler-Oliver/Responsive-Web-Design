@@ -121,7 +121,6 @@ h1 {
   left: 25%;
   width: 75%;
   padding: 20px;
-  margin-bottom: 100px;
 }
 
 .main-section header {
@@ -151,6 +150,10 @@ code {
   margin: 10px;
   border-radius: 5px;
   background-color: #f7f7f7;
+}
+
+#Reference {
+ margin-bottom: 100px; 
 }
 
 /*Media Queries*/
