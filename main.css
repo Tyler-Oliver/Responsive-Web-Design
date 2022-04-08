@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/background-img.jpg");
+  background-color: #cccccc;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#my-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#title-div {
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
+}
+
+#list-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#list-div li {
+  list-style-type: none;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  width: 100%;
+  min-height: 60px;
+  margin: 8px auto;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #e3ceaf;
+}
+
+.link:link,
+.link:visited {
+  color: navy;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: lightblue;
+}
+
+.link-top {
+  margin-top: 0;
+  padding: 10px;
+}
+
+.tag {
+  font-size: 32px;
+  font-weight: 450;
+  line-height: 2;
+}
+
+.tag-open {
+  margin-left: 40px;
+}
+
+.tag-close {
+  margin-right: 40px;
+}
+
+#github-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  margin: 20px auto;
+  color: navy;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+#github-link:link,
+#github-link:visited {
+  text-decoration: none;
+  color: navy;
+}
+
+#github-link:hover {
+  background-color: lightgray;
+}
+
+.fa-github {
+  font-size: 24px;
+}
+
+@media (max-width: 650px) {
+  #github-link:hover {
+    background-color: whitesmoke;
+  }
+}
+
+@media (max-width: 400px) {
+  #my-container {
+    width: 100%;
+  }
+
+  .tag-open {
+    margin-left: 0px;
+  }
+
+  .tag-close {
+    margin-right: 0px;
+  }
+}
