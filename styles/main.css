@@ -60,6 +60,7 @@ body {
   width: 100%;
   min-height: 60px;
   margin: 8px auto;
+  padding: 0 10px;
   border-radius: 5px;
   border: 1px solid gray;
   background-color: #e3ceaf;
@@ -77,6 +78,7 @@ body {
 
 .link-top {
   margin-top: 0;
+  padding: 10px;
 }
 
 .tag {
@@ -120,7 +122,7 @@ body {
   font-size: 24px;
 }
 
-@media (max-width: 650px;) {
+@media (max-width: 650px) {
   #github-link:hover {
     background-color: whitesmoke;
   }
