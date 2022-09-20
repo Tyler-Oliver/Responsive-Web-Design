@@ -19,6 +19,10 @@ body {
   position: relative;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 /*Header Section*/
 
 #header {
@@ -132,7 +136,7 @@ body {
 }
 
 #email {
-  margin: 10px;
+  margin: 20px;
   padding: 5px;
   border-radius: 5px;
   border: 1px solid gray;
@@ -166,9 +170,13 @@ body {
   text-align: center;
 }
 
+#features-list {
+  margin-top: 0px;
+}
+
 #features-list li {
   font-size: 1.5em;
-  margin: 5px;
+  margin: 40px 20px 10px 20px;
 }
 
 #features-list p {
@@ -182,16 +190,18 @@ body {
 }
 
 #how-it-works h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #how-it-works figcaption {
   font-size: 16px;
+  font-weight: 100;
 }
 
 #video {
-  width: 382.4px;
-  height: 215.2px;
+  width: 764.8px;
+  height: 430.4px;
+  margin: 30px 20px 30px 20px;
 }
 
 /*Pricing*/
@@ -231,7 +241,7 @@ body {
 }
 
 .pricing-title h1{
- margin-bottom: 10px;
+ margin-bottom: 20px;
  border-bottom: 1px solid gray;
 }
 
@@ -273,6 +283,12 @@ footer {
 }
 
 /* Media Queries */
+
+@media (max-width: 1110px) {
+  #video {
+    width: 95%;
+  }
+}
 
 @media (max-width: 650px) {
   #page-wrapper {
