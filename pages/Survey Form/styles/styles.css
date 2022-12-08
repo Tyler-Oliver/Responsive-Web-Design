@@ -43,7 +43,7 @@ p {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #dfdfdf;
+  background-color: black;
   border-radius: 50%;
 }
 
